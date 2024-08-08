@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Blog Name</h1>
-        <from action="/posts" method="POST">
+        <form action="/posts" method="POST">
             @csrf
             <div class="title">
                 <h2>Title</h2>
@@ -20,7 +20,7 @@
                 <textarea name="post[body]" placeholder="今日も１日お疲れ様でした。"></textarea>
             </div>
             <input type="submit" value="store"/>
-        </from>
+        </form>
         <div class="footer">
             <a href="/">戻る</a>
         </div>
